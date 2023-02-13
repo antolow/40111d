@@ -1,22 +1,34 @@
-let elem = document.querySelector('#elem');
-
-let elemen = document.querySelector('#ele');
 let element = document.querySelector('#element');
+// let elementik = document.querySelectorAll('#elementik')
+let element1 = document.querySelector('#element1');
+let element2 = document.querySelector('#element2');
 let spn = document.querySelector('#spn');
-console.log(elem.firstElementChild)
+console.log(element.firstElementChild)
 
 
-elem.firstElementChild.style.color = 'red'
+element.firstElementChild.style.color = 'red'
 
-elem.lastElementChild.style.color = 'green'
+element.lastElementChild.style.color = 'green'
 
-elem.nextElementSibling.append('!', elemen)
+// for (i = 0; i < elementik.children.length; i++) {
+//     elementik.append('!')
+// }
 
-for (i = 0; i < elem.children.length; i++) {
-    elem.append('!')
-}
+let el = element1.previousElementSibling
+el.append('!')
 
-elemen.parentNode.style.border = '2px solid red'
+let el1 = el.nextElementSibling
+el1.append('!')
+
+let el2 = el1.nextElementSibling
+el2.append('!')
+
+let el3 = el2.nextElementSibling
+el3.append('!')
+
+
+
+element.parentNode.style.border = '2px solid red'
 
 element.closest('div')
 spn.closest('.www')
